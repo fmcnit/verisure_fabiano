@@ -32,7 +32,7 @@ export default function Home() {
           alt="minhaImg"
           width={760}
           height={400}
-          className="hidden md:block"
+          className="hidden md:flex"
         />
         <Image
           src={"/image.png"}
