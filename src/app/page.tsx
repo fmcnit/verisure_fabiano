@@ -42,8 +42,8 @@ export default function Home() {
           className="-mt-38 md:hidden md:mt-0"
         />
       </main>
-      <footer className="h-12 flex items-center justify-center text-red-600">
-        <p className="text-sm">Site desenvolvido para atendimento do especialista Fabiano</p>
+      <footer className="h-12 flex items-center justify-center text-red-600 ">
+        <p className="text-sm md:text-left w-full p-2">Site desenvolvido para atendimento do especialista Fabiano</p>
       </footer>
     </div>
   );
