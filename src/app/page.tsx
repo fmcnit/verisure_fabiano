@@ -1,9 +1,13 @@
+"use client"
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Home() {
+
+  
   return (
     <div className="overflow-hidden h-screem">
       <header className="md:flex items-center justify-between p-2">
@@ -20,18 +24,18 @@ export default function Home() {
           <h2 className="text-white uppercase w-2/3 text-3xl p-4 border-l-8 border-red-600">
             Novo alarme Verisure com videomonitoramento Até 40% de desconto
           </h2>
-          <Button asChild className="m-5 text-white w-1/2 hover:text-red-600 uppercase font-bold bg-red-600 z-15" variant={"secondary"}>
+          <Button asChild className="flex m-5 text-white w-1/2 hover:text-red-600 uppercase font-bold bg-red-600" >
             <Link
               href={
                 "https://wa.me/5521999879406?text=Ol%C3%A1%20Especialista%2C%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gr%C3%A1tis%20do%20sistema%20da%20Verisure%20com%2040%25%20de%20desconto."
-              } >Faça sua Cotação</Link>
+              } target="_blank">Faça sua Cotação</Link>
           </Button>
         </div>
         <Image
           src={"/image.png"}
           alt="minhaImg"
-          width={760}
-          height={400}
+          width={1260}
+          height={500}
           className="hidden md:flex"
         />
         <Image
@@ -39,7 +43,7 @@ export default function Home() {
           alt="minhaImg"
           width={760}
           height={400}
-          className="-mt-38 md:hidden md:mt-0"
+          className="md:hidden"
         />
       </main>
       <footer className="h-12 flex items-center justify-center text-red-600 ">
@@ -48,3 +52,4 @@ export default function Home() {
     </div>
   );
 }
+ 
