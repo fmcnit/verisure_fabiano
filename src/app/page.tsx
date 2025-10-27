@@ -24,7 +24,7 @@ export default function Home() {
           <h2 className="text-white uppercase w-2/3 text-3xl p-4 border-l-8 border-red-600">
             Novo alarme Verisure com videomonitoramento Até 40% de desconto
           </h2>
-          <Button asChild className="flex m-5 text-white w-1/2 hover:text-red-600 uppercase font-bold bg-red-600" >
+          <Button asChild className="flex m-5 text-white w-1/2 hover:text-red-600 uppercase font-bold bg-red-600 text-center" >
             <Link
               href={
                 "https://wa.me/5521999879406?text=Ol%C3%A1%20Especialista%2C%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gr%C3%A1tis%20do%20sistema%20da%20Verisure%20com%2040%25%20de%20desconto."
