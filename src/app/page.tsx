@@ -47,7 +47,7 @@ export default function Home() {
         />
       </main>
       <footer className="h-12 flex items-center justify-center text-red-600 ">
-        <p className="text-sm md:text-left w-full p-2">Site desenvolvido para atendimento do especialista Fabiano Magalhães da Verisure Brasil</p>
+        <p className="text-sm md:text-left w-full p-2 text-center">Site desenvolvido para atendimento do especialista Fabiano Magalhães da Verisure Brasil</p>
       </footer>
     </div>
   );
