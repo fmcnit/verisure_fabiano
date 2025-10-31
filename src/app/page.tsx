@@ -58,9 +58,34 @@ export default function Home() {
           width={760}
           height={600}
           className="p-4"
-          
         />
-        <h2 className="text-4xl p-8 text-center text-red-600">"Não tenha medo, tenha Verisure"</h2>
+        <h2 className="text-4xl p-8 text-center text-red-600">
+          "Não tenha medo, tenha Verisure"
+        </h2>
+      </div>
+      <div className="w-screen h-fit flex flex-col p-4 text-center bg-gray-400 text-white">
+        <h2 className="text-2xl">
+          Você conhece todos os pontos vuneráveis da sua casa ou comércio?
+        </h2>
+        <p className="p-4">Solicite seu estudo de segurança gratuito</p>
+        <div>
+          <Button
+            asChild
+            className="mb-2 text-white hover:text-red-600 uppercase font-bold bg-red-600 text-center">
+            <Link
+              href={
+                "https://wa.me/5521999879406?text=Ol%C3%A1%20Especialista%2C%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gr%C3%A1tis%20do%20sistema%20da%20Verisure%20com%2040%25%20de%20desconto."
+              }
+              target="_blank">
+              Solicite Aqui Gratuitamente
+            </Link>
+          </Button>
+        </div>
+      </div>
+      <div className="w-screen h-fit flex flex-col text-center py-8">
+        <h2 className="text-3xl text-red-600 p-2">Videomonitoramento</h2>
+        <p className="text-red-600">Nova Camera Arlo</p>
+        <Image src={"/arlo.jpg"} alt="minhaImg" width={960} height={600} />
       </div>
       <footer className="h-12 flex items-center justify-center text-red-600 bg-gray-400">
         <p className="text-sm md:text-left w-full p-2 text-center">
