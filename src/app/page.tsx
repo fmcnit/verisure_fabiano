@@ -83,15 +83,47 @@ export default function Home() {
         </div>
       </div>
       <div className="h-fit flex flex-col text-center py-8">
-        <p className="text-red-600 ">Novidade</p>
+        <p className="text-red-600 font-bold">Novidade</p>
         <h2 className="text-3xl text-red-600 px-2 uppercase">
           Videomonitoramento
         </h2>
-        <p className="text-red-600 m-0">Nova Camera Arlo</p>
-        <Image src={"/arlo.jpg"} alt="minhaImg" width={960} height={600} />
+        <p className="text-red-600 m-0 md:hidden">Nova Camera Arlo</p>
+        <div className="flex items-center">
+          <Image
+            src={"/arlo.jpg"}
+            alt="minhaImg"
+            width={960}
+            height={600}
+            className="md:w-1/2 md:py-5 md:rounded-r-4xl md: pl-0"
+          />
+          <div className="hidden m-5 text-red-600 md:flex flex-col justify-center w-1/2">
+            <h3 className="text-2xl p-4 font-bold">Nova Camera Arlo</h3>
+            <ol>
+              <li>Resolução Full HD 1080p</li>
+              <li>Visão noturna</li>
+              <li>Armazenamento em Nuvem</li>
+              <li>Sirene integrada</li>
+              <li>Holofote integrado</li>
+              <li>Áudio bidirecional</li>
+              <li>Alta qualidade</li>
+              <li>Ângulo de visão de 130°</li>
+            </ol>
+            <Button
+              asChild
+              className="m-2 text-white hover:text-red-600 uppercase font-bold bg-red-600 text-center">
+              <Link
+                href={
+                  "https://wa.me/5521999879406?text=Ol%C3%A1%20Especialista%2C%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gr%C3%A1tis%20do%20sistema%20da%20Verisure%20com%2040%25%20de%20desconto."
+                }
+                target="_blank">
+                Saiba Mais
+              </Link>
+            </Button>
+          </div>
+        </div>
         <Button
           asChild
-          className="m-2 text-white hover:text-red-600 uppercase font-bold bg-red-600 text-center">
+          className="m-2 text-white hover:text-red-600 uppercase font-bold bg-red-600 text-center md:hidden">
           <Link
             href={
               "https://wa.me/5521999879406?text=Ol%C3%A1%20Especialista%2C%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gr%C3%A1tis%20do%20sistema%20da%20Verisure%20com%2040%25%20de%20desconto."
@@ -102,7 +134,7 @@ export default function Home() {
         </Button>
       </div>
       <footer className="h-12 flex items-center justify-center text-red-600 bg-gray-400">
-        <p className="text-sm md:text-left w-full p-2 text-center">
+        <p className="text-sm md:text-left p-2 text-center">
           Site desenvolvido para atendimento do especialista Fabiano Magalhães
           da Verisure Brasil
         </p>
