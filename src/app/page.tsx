@@ -82,10 +82,24 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      <div className="w-screen h-fit flex flex-col text-center py-8">
-        <h2 className="text-3xl text-red-600 p-2">Videomonitoramento</h2>
-        <p className="text-red-600">Nova Camera Arlo</p>
+      <div className="h-fit flex flex-col text-center py-8">
+        <p className="text-red-600 ">Novidade</p>
+        <h2 className="text-3xl text-red-600 px-2 uppercase">
+          Videomonitoramento
+        </h2>
+        <p className="text-red-600 m-0">Nova Camera Arlo</p>
         <Image src={"/arlo.jpg"} alt="minhaImg" width={960} height={600} />
+        <Button
+          asChild
+          className="m-2 text-white hover:text-red-600 uppercase font-bold bg-red-600 text-center">
+          <Link
+            href={
+              "https://wa.me/5521999879406?text=Ol%C3%A1%20Especialista%2C%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gr%C3%A1tis%20do%20sistema%20da%20Verisure%20com%2040%25%20de%20desconto."
+            }
+            target="_blank">
+            Saiba Mais
+          </Link>
+        </Button>
       </div>
       <footer className="h-12 flex items-center justify-center text-red-600 bg-gray-400">
         <p className="text-sm md:text-left w-full p-2 text-center">
