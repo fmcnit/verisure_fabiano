@@ -16,8 +16,10 @@ export const metadata: Metadata = {
   title: "Especialista Verisure",
   description: "Especialista FabIAno da Verisure, em que posso ajudar?",
   openGraph: {
+    type: "website",
     title: "Verisure Especialista FabIAno",
     description: "Bem-vindo a Verisure - Especialista Fabiano",
+    images: [{ url: "https://share.google/CRXn4X25rn9CXJzzi" }],
   },
 };
 
